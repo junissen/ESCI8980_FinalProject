@@ -581,7 +581,7 @@ def Age_Calculation(U_file, Th_file, U_wash, Th_wash,
     sheet['F' + row] = "± " + "{0:.0f}".format(two_ppt_err)
     sheet['G' + row] = "{0:.1f}".format(zero_two_atomic_final)
     sheet['H' + row] = "± " + "{0:.1f}".format(zero_two_atomic_final)
-    sheet['I' + row] = "{0:.1}".format(d234U_m)
+    sheet['I' + row] = "{0:.1f}".format(d234U_m)
     sheet['J' + row] = "± " + "{0:.1f}".format(d234U_m_err)
     sheet['K' + row] = "{0:.5f}".format(zero_eight_activity)
     sheet['L' + row] = "± " + "{0:.5f}".format(zero_eight_activity_err)

@@ -79,6 +79,87 @@ agecalc.Age_Calculation('72U_011517.xlsx', '72Th_011517.xlsx', '72U_wash_011517.
 
 Run in command line after importing the isofilter, isocalc, and agecalc. Print "y" on printing option prompt to see resulting analysis.  Choosing to print as you go is optional.
 
-To export to a preexisting Excel workbook, please use 'age_spreadsheet_table.xlsx' included in this reposity. You will need to manually enter the sample ID (the data used is for sample SVC16-1). Enter the workbook name when prompted, and the row number you would like to add data to. This option is included so that data can be compiled in the same workbook according to sample. 
+To export to a preexisting Excel workbook, please use 'age_spreadsheet_table.xlsx' included in this reposity. You will need to manually enter the sample ID (the data used is for sample SVC161-1). Enter the workbook name when prompted, and the row number you would like to add data to. This option is included so that data can be compiled in the same workbook according to sample. 
+
+Age_Calculation requires the following inputs:
+```
+Age_Calculation(Uranium file, Thorium file, Uranium wash file, Thorium wash file, 
+                Uranium chemblank file, Thorium chemblank file, Uranium wash chemblank file, Thorium wash chemblank file, 
+                abundance sensitity, sample weight, spike weight, spike weight for chemblank,
+                spike used, inquiry_input, current year)
+```
+Note the inquiry_input is entered through a previous prompt. The current settings for test.py include all necessary inputs in order to run the files provided in this demo. 
+
+### DEMO
+--------
+
+Download agecalc.py, isocalc.py, isofilter.py, and test.py and all included Excel documents into the same folder on your computer. In terminal, adjust to the correct directory. In this example, my folder containing all relevant files is ESCI8980_FinalProject, saved under my home folder. After the directory has been updated, run the file test.py using Python: 
+```
+$ cd ESCI8980_FinalProject
+$ python test.py
+```
+Following this action, a number of prompts will appear. Below are specific instructions for each prompt. 
+```
+Would you like to print as you go? [y/n]: 
+```
+Printing is optional, but is nice to be able to double check calculations have come out correctly as you go. Enter either "y" or "n" into this prompt. 
+
+```
+What is the sample ID?:
+```
+Enter your sample ID. The files contained in this example are for sample "SVC161-1"
+
+```
+Would you like to export your chem blank values? [y/n]:
+```
+This step is optional as well. If this is the first time you have run any data for your chemistry blank, you can choose to have the program output an Excel spreadsheet with the necessary information for tracking chemblank values. You will receive further prompts regarding this spreadsheet if you choose to export. Enter either "y" or "n" into this prompt. 
+
+ * If you choose export your chem blank values, you will see the following prompt: 
+ ```
+ What file would you like to write to (please include type, i.e. '.xlsx')?:
+ ```
+ Please enter the name you would like for the Excel spreadsheet containing your chemblank values. An example: chemblank.xlsx
+
+Following these prompts, Ucalculation, Thcalculation, and background_values programs will run. 
+
+ * If you have chosen to export your chem blank values, you will then see the following prompts:
+ ```
+ What is the name of your chem blank?:
+ ```
+ If you are using the example files included, the chemblank name is "B71"
+ ```
+ On what date did you run your chem blank?:
+ ```
+ For example files, this chemblank was run on "1/15/17"
+ If you have not chosen to export your chem blank values, you will not be prompted to provide these answers. 
+
+Programs blank_calculate and Age_calculation will run. After these have finished, you will be prompted with the following: 
+
+```
+Into what file should the age data be written? Please include file formate (i.e. xlsx):
+```
+For the example included, input age_spreadsheet_table.xlsx. This is the common format for U-Th spreadsheets and allows you to continue adding dates as you process them. 
+```
+Into what row should the age data be written? :
+```
+If this is the first time running a date, the row to enter is 6. 
+
+Once everything has been run and compiled, you will see the following: 
+```
+Spreadsheet has been updated. Age Calculation is finished. 
+```
+Your compiled age data will be in the Excel spreadsheet you indicated in the same folder you are running from. For the example data included here, the U-Th date of the sample 103285 +/- 580 years BP. 
+
+
+ 
+
+ 
+
+
+
+
+
+
+
 
 

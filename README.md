@@ -114,7 +114,7 @@ Would you like to export your chem blank values? [y/n]:
 ```
 This step is optional as well. If this is the first time you have run any data for your chemistry blank, you can choose to have the program output an Excel spreadsheet with the necessary information for tracking chemblank values. You will receive further prompts regarding this spreadsheet if you choose to export. Enter either "y" or "n" into this prompt. 
 
- *If you choose export your chem blank values, you will see the following prompt:* 
+ *If you choose to export your chem blank values, you will see the following prompt:* 
  ```
  What file would you like to write to (please include type, i.e. '.xlsx')?:
  ```

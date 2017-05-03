@@ -136,7 +136,7 @@ Following these prompts, Ucalculation, Thcalculation, and background_values prog
 Programs blank_calculate and Age_calculation will run. After these have finished, you will be prompted with the following: 
 
 ```
-Into what file should the age data be written? Please include file formate (i.e. xlsx):
+Into what file should the age data be written? Please include file format (i.e. xlsx):
 ```
 For the example included, input age_spreadsheet_table.xlsx. This is the common format for U-Th spreadsheets and allows you to continue adding dates as you process them. 
 ```

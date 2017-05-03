@@ -114,24 +114,24 @@ Would you like to export your chem blank values? [y/n]:
 ```
 This step is optional as well. If this is the first time you have run any data for your chemistry blank, you can choose to have the program output an Excel spreadsheet with the necessary information for tracking chemblank values. You will receive further prompts regarding this spreadsheet if you choose to export. Enter either "y" or "n" into this prompt. 
 
- * If you choose export your chem blank values, you will see the following prompt: 
+ *If you choose export your chem blank values, you will see the following prompt:* 
  ```
  What file would you like to write to (please include type, i.e. '.xlsx')?:
  ```
- Please enter the name you would like for the Excel spreadsheet containing your chemblank values. An example: chemblank.xlsx
+ *Please enter the name you would like for the Excel spreadsheet containing your chemblank values. An example: chemblank.xlsx*
 
 Following these prompts, Ucalculation, Thcalculation, and background_values programs will run. 
 
- * If you have chosen to export your chem blank values, you will then see the following prompts:
+ *If you have chosen to export your chem blank values, you will then see the following prompts:*
  ```
  What is the name of your chem blank?:
  ```
- If you are using the example files included, the chemblank name is "B71"
+ *If you are using the example files included, the chemblank name is "B71"*
  ```
  On what date did you run your chem blank?:
  ```
- For example files, this chemblank was run on "1/15/17"
- If you have not chosen to export your chem blank values, you will not be prompted to provide these answers. 
+ *For example files, this chemblank was run on "1/15/17"*
+ *If you have not chosen to export your chem blank values, you will not be prompted to provide these answers.* 
 
 Programs blank_calculate and Age_calculation will run. After these have finished, you will be prompted with the following: 
 

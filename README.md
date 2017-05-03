@@ -1,7 +1,7 @@
 # ESCI8980_FinalProject
 Program for calculating age from U-Th MC-ICP-MS data
 
-####Program includes all code necessary for calculating and exporting U-Th ages
+#### Program includes all code necessary for calculating and exporting U-Th ages
 
 Assignment includes files agecalc.py, isocalc.py, isofilter.py, test.py, and accompanying Excel files. 
 Shown below are the divisions of each file: 
